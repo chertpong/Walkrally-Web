@@ -10,6 +10,7 @@ angular.module('myApp.admin', ['ngRoute'])
     '$scope', 'Config', 'localStorageService', '$log','$http', '$location',
     function($scope, Config, localStorageService, $log, $http, $location) {
       $scope.places = [];
+      $scope.search = '';
       var path = Config.backendUrl+'/api/places';
       $http
         .get(path,{
