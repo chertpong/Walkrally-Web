@@ -9,7 +9,7 @@
 </md-input-container>
 <md-content>
     <md-list flex>
-        <md-subheader class="md-no-sticky">Places list</md-subheader>
+        <md-subheader class="md-no-sticky">Places name</md-subheader>
         <md-list-item class="md-3-line" ng-repeat="place in places | filter:search" ng-click="null">
             <div class="md-list-item-text" layout="row">
                 <div class="flex-80">
@@ -17,8 +17,8 @@
                     <h4>{{ place.type }}</h4>
                 </div>
                <div class="flex-20">
-                   <md-button class="md-raised">Edit</md-button>
-                   <md-button class="md-raised md-primary">View</md-button>
+                   <md-button class="md-raised md-primary" ng-click="goEdit(place._id)">Edit</md-button>
+                   <md-button class="md-raised md-warn">Delete</md-button>
                </div>
             </div>
         </md-list-item>
