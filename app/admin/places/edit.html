@@ -20,18 +20,43 @@
                             <md-option value="Restaurant">Restaurant</md-option>
                         </md-select>
                     </md-input-container>
+                    <md-input-container>
+                        <label>Language</label>
+                        <md-select ng-model="place.descriptions[1].language">
+                            <md-option value="th">Thai</md-option>
+                            <md-option value="en">English</md-option>
+                            <md-option value="ch">Chinese</md-option>
+                        </md-select>
+                    </md-input-container>
                     <md-input-container class="md-block" flex-gt-sm>
                         <label>Description (TH)</label>
                         <textarea ng-model="place.descriptions[1].content" md-maxlength="2000" rows="10" md-select-on-focus></textarea>
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Language</label>
+                        <md-select ng-model="place.descriptions[0].language">
+                            <md-option value="th">Thai</md-option>
+                            <md-option value="en">English</md-option>
+                            <md-option value="ch">Chinese</md-option>
+                        </md-select>
                     </md-input-container>
                     <md-input-container class="md-block" flex-gt-sm>
                         <label>Description (EN)</label>
                         <textarea ng-model="place.descriptions[0].content" md-maxlength="2000" rows="10" md-select-on-focus></textarea>
                     </md-input-container>
+                    <md-input-container>
+                        <label>Language</label>
+                        <md-select ng-model="place.descriptions[2].language">
+                            <md-option value="th">Thai</md-option>
+                            <md-option value="en">English</md-option>
+                            <md-option value="ch">Chinese</md-option>
+                        </md-select>
+                    </md-input-container>
                     <md-input-container class="md-block" flex-gt-sm>
                         <label>Description (CH)</label>
                         <textarea ng-model="place.descriptions[2].content" md-maxlength="2000" rows="10" md-select-on-focus></textarea>
                     </md-input-container>
+
                 <md-input-container class="md-block">
                     <label>Location - Lat</label>
                     <input type="text" ng-model="place.location.lat">
